@@ -1,38 +1,224 @@
-.App {
+button{
+  background-color: rgba(100, 149, 237,0.8);
+  border-radius: 12px;
+  border:0;
+  font-size: 60px;
+  height: 80px;
+  text-decoration: none;
   text-align: center;
+  color: white;
+  text-decoration-color: white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover {
+  background-color: lightgreen;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.back-button{
+  margin: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.LandingPage{
+  background-image:url("https://estaticos.muyinteresante.es/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-redes.jpg");
+  height: 100vh;
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-size:cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  align-items:center;
+  justify-content: center ;
+}
+body{
+  background-image: url("https://www.fundacion-affinity.org/sites/default/files/los-10-sonidos-principales-del-perro.jpg");
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card {
+  border-radius: 12px;
+  margin: 20px;
+  width: 20%;
+  height: auto;
+  background-color: rgba(100, 149, 237,0.8);
+  position: relative;
+  padding: 12px;
+}
+.card-detail {
+  border-radius: 12px;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 40%;
+  height: auto;
+  background-color: rgba(100, 149, 237,0.8);
+  position: relative;
+  padding: 12px;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+#page-button-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.page-button{
+  margin: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.page-button-current{
+  margin: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: lightgreen;
+}
+input{
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  margin: 10px;
+  font-size: 20px;
+  height: 40px;
+  width: 250px;
+  text-align: center;
+  background-color: rgba(100, 149, 237,0.8);
+}
+select{
+  color: #fff;
+  border-radius: 12px;
+  border: 0;
+  margin: 10px;
+  font-size: 20px;
+  height: 40px;
+  width: 250px;
+  text-align: center;
+  background-color: rgba(100, 149, 237,0.8);
+}
+::placeholder{
+  color: #ddd;
+}
+.search-bar-button{
+  border: 0;
+  margin: 10px;
+  font-size: 20px;
+  height: 40px;
+}
+.temperament{
+  border-radius: 12px;
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgreen;
+  display: inline-block;
+}
+.name-dog{
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+.dog-weight{
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.dog-weight-datail{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  color: #fff;
+  text-align: center;
+}
+.temperaments-container{
+  display:flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+form{
+  margin: 10px;
+}
+#form-dog{
+  display: flex;
+
+}
+
+
+.close_button{
+  background-color: red;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.close_button:hover {
+  background-color: red;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+  transform: translateY(-2px);
+}
+.error{
+  color: red;
+  font-size: 20px;
+}
+.spinner {
+  flex-direction: row;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ }
+ 
+ .dot1, .dot2, .dot3 {
+  width: 15px;
+  height: 15px;
+  border: double;
+  border-color: white;
+  border-radius: 50%;
+  margin: 10px;
+ }
+ 
+ .dot1 {
+  animation: jump765 1.6s -0.32s linear infinite;
+  background: rgba(100, 149, 237,0.8);
+ }
+ 
+ .dot2 {
+  animation: jump765 1.6s -0.16s linear infinite;
+  background: rgba(100, 149, 237,0.8);
+ }
+ 
+ .dot3 {
+  animation: jump765 1.6s linear infinite;
+  background: rgba(100, 149, 237,0.8);
+ }
+ 
+ @keyframes jump765 {
+  0%, 80%, 100% {
+   -webkit-transform: scale(0);
+   transform: scale(0);
   }
-  to {
-    transform: rotate(360deg);
+ 
+  40% {
+   -webkit-transform: scale(2.0);
+   transform: scale(2.0);
   }
-}
+ }
