@@ -20,7 +20,8 @@ export default function FormDog() {
     min_weight:0,
     max_weight:0,
     life_span:0,
-    temperaments:[]
+    temperaments:[],
+    rewiew:""
   })
   var [errors,set_errors]=useState([]);
 
@@ -200,6 +201,11 @@ export default function FormDog() {
           type="text"
           placeholder="life_span"
           onChange={handleChange} />
+          <input type="text" 
+          name = "rewiew" 
+          placeholder="rewiew"
+          onChange={handleChange}
+          />
 
 
 

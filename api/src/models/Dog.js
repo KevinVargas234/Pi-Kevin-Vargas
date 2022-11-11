@@ -28,6 +28,9 @@ module.exports = (sequelize) => {
     },
     image: {
       type: DataTypes.STRING(1048576),
+    },
+    rewiew:{
+      type:DataTypes.STRING,
     }
   });
 };
